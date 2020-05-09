@@ -25,11 +25,12 @@ ui <- fluidPage(
       tabsetPanel(
         tabPanel("Prediction Result", verbatimTextOutput("result")), 
         tabPanel("Data", 
-                 column(4,verbatimTextOutput("size")),
+                 column(4,textOutput("size")),
                  column(6,
                  style = "overflow-y:scroll; max-height: 600px; position:relative;",
                  tableOutput("data"))), 
-        tabPanel("Prediction Model", verbatimTextOutput("rf"))
+        tabPanel("Predictive Model: Random Forest", 
+                 textOutput("rf"))
       )
     )
   )
