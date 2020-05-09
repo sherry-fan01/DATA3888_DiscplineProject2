@@ -55,5 +55,5 @@ shinyServer(function(input, output) {
     })
   
   output$rf = renderText({
-    print("Random forest is an ensemble learning method which constructs many decision trees, and takes the majority of the results from decision trees as the final result. Since there are only 34 patients in the training dataset, random forest is a suitable classifier which could reduce the model instability by averaging multiple decision trees. For 25 repeats of 5-fold cross validation for the training dataset, random forest achives an average accuracy of 0.88.")})
+    print("Random forest is an ensemble learning method which constructs many decision trees, and takes the majority of the results from decision trees as the final result. Since there are only 34 patients in the training dataset, random forest is a suitable classifier which could reduce the model instability by averaging multiple decision trees. For 25 repeats of 5-fold cross validation for the training dataset, random forest achives an average accuracy around 0.87.")})
 })
